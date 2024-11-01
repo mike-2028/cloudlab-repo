@@ -17,7 +17,7 @@ billing_alert:
 #      day: 01
   #default pubsub topic here:
   #pubsub_topic: "projects/{project_id}/topics/{topic_id}"
-  pubsub_topic: "projects/cloudlab-infra/topics/prj-cloudlab-budget-notificaiton-topic-poc"
+  pubsub_topic: "projects/cloudlab-infra/topics/mygcpdemo-cloudlab-budget-notificaiton-topic-poc"
 
 # [opt] Contacts for billing alerts and important notifications
 essential_contacts: ["admin@mygcpdemo.com"]
