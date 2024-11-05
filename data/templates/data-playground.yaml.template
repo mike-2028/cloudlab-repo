@@ -4,7 +4,7 @@ essential_contacts:
   {%- if group %}
   - {{group}}
   {%- else %}
-  - cloudlab-ops@example.com
+  - gcp-devops@mygcpdemo.com
   {%- endif %}
 
 # Folder the project will be created as children of
@@ -18,7 +18,7 @@ group_iam:
   {%- if group %}
   {{ group }}:
   {%- else %}
-  cloudlab-ops@example.com:
+  gcp-devops@mygcpdemo.com:
   {%- endif %}
     - roles/editor
     - roles/workstations.admin
