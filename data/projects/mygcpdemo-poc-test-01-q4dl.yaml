@@ -1,0 +1,56 @@
+# [opt] Contacts for billing alerts and important notifications
+
+essential_contacts:
+  - gcp-devops@mygcpdemo.com
+
+# Folder the project will be created as children of
+folder_id: folders/650123227538
+
+# template
+template: "default"
+
+# [opt] Authoritative IAM bindings in group => [roles] format
+group_iam:
+  gcp-devops@mygcpdemo.com:
+    - roles/editor
+    - roles/workstations.admin
+    - roles/compute.networkUser
+    - roles/iap.tunnelResourceAccessor
+    - roles/iap.httpsResourceAccessor
+    - roles/aiplatform.admin
+    - roles/logging.viewAccessor
+    - roles/logging.viewer
+    - roles/source.admin
+    - roles/cloudaicompanion.user
+
+# [opt] Labels for the project - merged with the ones defined in defaults.yaml
+labels:
+  role: sandbox
+  creator: cloudlab
+  requestor:  mike__mygcpdemo_com
+
+# [opt] APIs to enable on the project - merged with values in defaults.yaml
+services:
+  - aiplatform.googleapis.com
+  - compute.googleapis.com
+  - dataform.googleapis.com
+  - iap.googleapis.com
+  - monitoring.googleapis.com
+  - networkconnectivity.googleapis.com
+  - networkmanagement.googleapis.com
+  - notebooks.googleapis.com
+  - stackdriver.googleapis.com
+  - storage.googleapis.com
+  - workstations.googleapis.com
+
+#shared vpc config
+vpc:
+  # [opt] If set, enables the container API
+  
+
+  # Host project the project will be service project of
+  
+
+  # [opt] Subnets in the host project where principals will be granted networkUser
+  # in region/subnet-name => [principals]
+  
